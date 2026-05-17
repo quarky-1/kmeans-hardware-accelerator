@@ -1,0 +1,39 @@
+# Simulation artifacts
+sim/*.vvp
+sim/*.out
+sim/waveforms/*.vcd
+sim/waveforms/*.lxt
+sim/waveforms/*.fst
+
+# Xilinx Vivado
+*.xpr
+*.xsa
+*.bit
+*.ltx
+*.runs/
+*.ip_user_files/
+*.cache/
+*.hw/
+*.sim/
+*.gen/
+vivado*.jou
+vivado*.log
+vivado_pid*.str
+
+# OpenLane / GDSII
+runs/
+*.gds
+*.mag
+*.lef
+*.def
+*.spef
+*.lib
+*.v.bak
+
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+__pycache__/
