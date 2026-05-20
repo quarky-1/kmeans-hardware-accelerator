@@ -1,4 +1,4 @@
-# RTL Design of K-Means Clustering Hardware Accelerator
+ # RTL Design of K-Means Clustering Hardware Accelerator
 
 > **Status: In Progress** — RTL architecture finalized; datapath modules under implementation.
 
@@ -156,11 +156,18 @@ Instead of IEEE 754 floating-point (resource-expensive on FPGA), this design use
 
 ## Related Work
 
-This accelerator is part of a broader exploration of hardware-software co-design for edge ML inference. The RTL-to-GDS methodology builds on prior work implementing an [8-bit ALU through the full OpenLane flow](https://github.com/quarky/rtl-to-gds-alu-overview) (115 standard cells, 998 µm², 60.8 µW).
+This accelerator connects to two prior projects:
+
+**Research:** Co-authored a paper analyzing energy-accuracy trade-offs for MobileNet-V2 inference on Jetson-class edge hardware across FP32, FP16, and INT8 precision modes — establishing the motivation for hardware-level efficiency solutions like this accelerator. Published in the IEEE SB JIIT Research Forum Proceedings, 2026. → [Repository](https://github.com/SIDDYISBACK/IEEE-SB-JIIT-Research-Forum-2026)
+
+**Implementation:** The ASIC backend methodology builds on a completed RTL-to-GDSII implementation of an 8-bit ALU using OpenLane and Sky130 PDK — 115 standard cells, 998 µm², 60.8 µW, zero DRC/LVS violations. → [Repository](https://github.com/quarky-1/RTL-to-GDS-ALU)
 
 ---
 
 ## Author
 
-**Sarthak Tripathi** — B.Tech Electronics Engineering (VLSI Design & Technology), JIIT Noida  
-contact.sarthaktripathi@gmail.com
+**Sarthak Tripathi**  
+B.Tech — Electronics Engineering (VLSI Design & Technology)  
+Jaypee Institute of Information Technology, Noida  
+contact.sarthaktripathi@gmail.com  
+[GitHub](https://github.com/quarky-1) | [LinkedIn](https://www.linkedin.com/in/sarthak-tripathi-0b925b1b7/)
